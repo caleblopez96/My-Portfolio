@@ -44,11 +44,11 @@ li {
   flex-direction: column;
   flex-wrap: wrap;
   gap: 2rem;
-  animation: text-focus-in .5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+  animation: focus-in .5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
   min-height: 100vh;
 }
 
-@keyframes text-focus-in {
+@keyframes focus-in {
   0% {
     filter: blur(8px);
     opacity: 0;
@@ -63,15 +63,11 @@ section {
   width: 90%;
 }
 
-section:last-of-type{
-  display: block;
-}
-
 footer {
   bottom: 0;
   display: flex;
   justify-content: center;
-  padding: 1rem 0 ;
+  padding: 1rem 0;
 }
 
 h3{
