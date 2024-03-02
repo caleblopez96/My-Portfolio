@@ -1,0 +1,85 @@
+:root {
+  --dark-gray: #212529;
+  --white: rgb(255, 255, 255);
+  --maroon: rgb(140, 29, 64)
+}
+
+*,
+*::before,
+*::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: var(--dark-gray);
+  color: var(--white);
+  font-family: "Recursive", sans-serif;
+  height: 100%;
+}
+
+
+header {
+  display: flex;
+  justify-content: center;
+  margin: 1rem;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  list-style: none;
+}
+
+li {
+  margin: 0 10px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin: 2rem 0;
+  animation: text-focus-in .5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+@keyframes text-focus-in {
+  0% {
+    filter: blur(8px);
+    opacity: 0;
+  }
+  100% {
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+section {
+  width: 90%;
+}
+
+footer {
+  bottom: 0px;
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0;
+  padding: 1rem 0 ;
+}
+
+h3{
+  padding: 1rem 0;
+}
+
+p {
+  font-weight: 300;
+}
+
+a, a:visited {
+  all: unset;
+  cursor: pointer;
+}
