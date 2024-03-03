@@ -47,11 +47,13 @@ li {
   position: relative;
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-direction: column;
   flex-wrap: wrap;
   gap: 2rem;
   animation: focus-in .5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
   min-height: 100vh;
+  line-height: 2rem;
 }
 
 @keyframes focus-in {
@@ -66,7 +68,7 @@ li {
 }
 
 section {
-  width: 90%;
+  width: 90%;  
 }
 
 footer {
@@ -76,11 +78,11 @@ footer {
   padding: 1rem 0;
 }
 
-h3{
+h3 {
   padding: 1rem 0;
 }
 
-h4{
+h4 {
   padding: 1rem 0;
 }
 
@@ -88,11 +90,24 @@ p {
   font-weight: 300;
 }
 
-a, a:visited {
+a, a:visited{
   all: unset;
   cursor: pointer;
 }
 
 a:hover {
   color: var(--maroon);
+  animation: fadeInOut 2s infinite;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: .5;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: .5;
+  }
 }
