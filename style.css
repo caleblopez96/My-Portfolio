@@ -51,7 +51,7 @@ li {
   flex-direction: column;
   flex-wrap: wrap;
   gap: 2rem;
-  animation: focus-in .5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+  animation: focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
   min-height: 100vh;
   line-height: 2rem;
 }
