@@ -19,11 +19,17 @@ html {
   font-family: "Recursive", sans-serif;
 }
 
+html-day{
+  background-color: var(--white);
+  color: var(--dark-gray);
+}
+
 
 header {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   margin: 1rem;
+  padding: 1rem 0;
 }
 
 ul {
@@ -74,6 +80,10 @@ h3{
   padding: 1rem 0;
 }
 
+h4{
+  padding: 1rem 0;
+}
+
 p {
   font-weight: 300;
 }
@@ -81,4 +91,8 @@ p {
 a, a:visited {
   all: unset;
   cursor: pointer;
+}
+
+a:hover {
+  color: var(--maroon);
 }
