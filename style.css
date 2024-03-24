@@ -1,6 +1,7 @@
 :root{
   --dark-gray: #212529;
   --white: rgb(255, 255, 255);
+  --maroon: #8C1D40;
 }
 
 *,
@@ -18,30 +19,6 @@ html{
   font-family: "Recursive", sans-serif;
 }
 
-html-day{
-  background-color: var(--white);
-  color: var(--dark-gray);
-}
-
-
-header{
-  display: flex;
-  justify-content: flex-end;
-  margin: 1rem;
-  padding: 1rem 0;
-}
-
-ul{
-  display: flex;
-  flex-direction: row;
-  padding: 0;
-  list-style: none;
-}
-
-li{
-  margin: 0 10px;
-}
-
 .container{
   position: relative;
   display: flex;
@@ -55,30 +32,12 @@ li{
   line-height: 2rem;
 }
 
-@keyframes focus-in{
-  0% {
-    filter: blur(8px);
-    opacity: 0;
-  }
-  100% {
-    filter: blur(0px);
-    opacity: 1;
-  }
-}
-
 section{
   width: 90%;  
 }
 
 .intro {
   width: 65ch;
-}
-
-footer{
-  bottom: 0;
-  display: flex;
-  justify-content: center;
-  padding: 1rem 0;
 }
 
 h3, h4{
@@ -97,6 +56,24 @@ a, a:visited{
 a:hover{
   color: var(--maroon);
   animation: fadeInOut 2s infinite;
+}
+
+footer{
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0;
+}
+
+@keyframes focus-in{
+  0% {
+    filter: blur(8px);
+    opacity: 0;
+  }
+  100% {
+    filter: blur(0px);
+    opacity: 1;
+  }
 }
 
 @keyframes fadeInOut{
