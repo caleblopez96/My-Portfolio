@@ -1,4 +1,4 @@
-:root {
+:root{
   --dark-gray: #212529;
   --white: rgb(255, 255, 255);
   --maroon: rgb(140, 29, 64)
@@ -12,7 +12,7 @@
   box-sizing: border-box;
 }
 
-html {
+html{
   scroll-behavior: smooth;
   background-color: var(--dark-gray);
   color: var(--white);
@@ -25,25 +25,25 @@ html-day{
 }
 
 
-header {
+header{
   display: flex;
   justify-content: flex-end;
   margin: 1rem;
   padding: 1rem 0;
 }
 
-ul {
+ul{
   display: flex;
   flex-direction: row;
   padding: 0;
   list-style: none;
 }
 
-li {
+li{
   margin: 0 10px;
 }
 
-.container {
+.container{
   position: relative;
   display: flex;
   align-items: center;
@@ -56,7 +56,7 @@ li {
   line-height: 2rem;
 }
 
-@keyframes focus-in {
+@keyframes focus-in{
   0% {
     filter: blur(8px);
     opacity: 0;
@@ -67,26 +67,22 @@ li {
   }
 }
 
-section {
+section{
   width: 90%;  
 }
 
-footer {
+footer{
   bottom: 0;
   display: flex;
   justify-content: center;
   padding: 1rem 0;
 }
 
-h3 {
+h3, h4{
   padding: 1rem 0;
 }
 
-h4 {
-  padding: 1rem 0;
-}
-
-p {
+p{
   font-weight: 300;
 }
 
@@ -95,19 +91,13 @@ a, a:visited{
   cursor: pointer;
 }
 
-a:hover {
+a:hover{
   color: var(--maroon);
   animation: fadeInOut 2s infinite;
 }
 
-@keyframes fadeInOut {
-  0% {
-    opacity: .5;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    opacity: .5;
-  }
+@keyframes fadeInOut{
+  0% { opacity: .5; }
+  50% { opacity: 1; }
+  100% { opacity: .5; }
 }
