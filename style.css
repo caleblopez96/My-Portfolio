@@ -104,6 +104,6 @@ footer{
 
 @media (width <= 600px) {
   .container{
-    padding: 1.25rem;
+    padding: 1rem;
   }
 }
