@@ -53,7 +53,7 @@ svg{
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  padding: 4rem;
+  padding: 2.75rem;
   animation: focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
   min-height: 100vh;
   line-height: 2rem;
