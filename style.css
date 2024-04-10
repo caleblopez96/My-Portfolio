@@ -14,9 +14,39 @@
 
 html{
   scroll-behavior: smooth;
+  font-family: "Recursive", sans-serif;
+}
+
+body{
   background-color: var(--dark-gray);
   color: var(--white);
-  font-family: "Recursive", sans-serif;
+}
+
+.bodyDay {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+header{
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+button{
+  all: unset;
+}
+
+svg{
+  margin: 1rem;
+}
+
+.svgNight{
+  stroke: var(--white);
+}
+
+.svgDay{
+  stroke: var(--dark-gray);
 }
 
 .container{
