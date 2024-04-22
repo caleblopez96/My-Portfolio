@@ -85,7 +85,7 @@ a, a:visited {
 }
 
 a:hover {
-  animation: shake 1s infinite;
+  animation: shake 1.5s infinite;
 }
 
 footer {
