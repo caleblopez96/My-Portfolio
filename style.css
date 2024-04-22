@@ -85,6 +85,7 @@ a, a:visited {
 }
 
 a:hover {
+  color: var(--maroon);
   animation: shake 1.5s infinite;
 }
 
