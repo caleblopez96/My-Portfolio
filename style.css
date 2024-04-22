@@ -1,4 +1,4 @@
-:root{
+:root {
   --dark-gray: #212529;
   --white: rgb(255, 255, 255);
   --maroon: #8C1D40;
@@ -6,7 +6,7 @@
 
 *,
 *::before,
-*::after{
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -49,6 +49,11 @@ svg {
   stroke: var(--dark-gray);
 }
 
+svg:hover {
+  cursor: pointer;
+  animation: fade-in-out 2s infinite;
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -60,38 +65,37 @@ svg {
   text-wrap: balance;
 }
 
-.tracking-letters{
+.tracking-letters {
   font-size: 2rem;
   animation: tracking-letters 2s cubic-bezier(0.215, 0.610, 0.355, 1) both;
 }
 
-h3, h4{
+h3, h4 {
   padding: 1rem 0;
 }
 
-p{
+p {
   font-weight: 300;
   max-width: 75ch;
 }
 
-a, a:visited{
+a, a:visited {
   all: unset;
   cursor: pointer;
 }
 
-a:hover{
-  color: var(--maroon);
-  animation: fade-in-out 2s infinite;
+a:hover {
+  animation: shake 1s infinite;
 }
 
-footer{
+footer {
   bottom: 0;
   display: flex;
   justify-content: center;
   padding: 1rem 0;
 }
 
-@keyframes tracking-letters{
+@keyframes tracking-letters {
   0% {
     letter-spacing: .75em;
     opacity: 0;
@@ -105,7 +109,22 @@ footer{
   }
 }
 
-@keyframes focus-in{
+@keyframes shake {
+  10% {
+    transform: scale(1.15) rotate(3deg);
+  }
+  20% {
+    transform: scale(1.15) rotate(-3deg);
+  }
+  30% {
+    transform: scale(1.15) rotate(3deg);
+  }
+  40% {
+    transform: none;
+  }
+}
+
+@keyframes focus-in {
   0% {
     filter: blur(8px);
     opacity: 0;
@@ -116,7 +135,7 @@ footer{
   }
 }
 
-@keyframes fade-in-out{
+@keyframes fade-in-out {
   0% { opacity: .5; }
   50% { opacity: 1; }
   100% { opacity: .5; }
